@@ -1,2 +1,3 @@
-# study-tracker
+# Study Tracker
+
 Study Tracking App

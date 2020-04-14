@@ -21,18 +21,22 @@ function MainButtons() {
   );
 }
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.topHalf}>
-        <Text style={styles.logo}>Study Jina Study</Text>
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.topHalf}>
+          <Text style={styles.logo}>Study Jina Study</Text>
+        </View>
+        <View style={styles.bottomHalf}>
+          <MainButtons />
+        </View>
       </View>
-      <View style={styles.bottomHalf}>
-        <MainButtons />
-      </View>
-    </View>
-  );
+    );
+  }
 }
+
+// Style 이 지금 먹히지 않으니 새로 js 파일 만들어서 export해서 위 클래스에 적용될 수 있게 만든다
 
 const styles = StyleSheet.create({
   container: {
